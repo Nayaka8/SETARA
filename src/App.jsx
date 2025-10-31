@@ -12,6 +12,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage'; // Halaman Home yang baru kita buat
 import RuangVolunteer from './pages/RuangVolunteer';
 import RuangVolunteerPM from "./pages/RuangVolunteerPM";
+import RuangVolunteerMM from "./pages/RuangVolunteerMM";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/volunteer-home" element={<RuangVolunteer />} />
                 <Route path="/volunteer-home-panduan-mengajar" element={<RuangVolunteerPM />} />
+                <Route path="/volunteer-home-materi-mengajar" element={<RuangVolunteerMM />} />
             </Routes>
         </div>
     )
