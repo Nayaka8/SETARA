@@ -10,9 +10,11 @@ import MiniHeader from "./components/MiniHeader";
 
 import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage'; // Halaman Home yang baru kita buat
-import RuangVolunteer from './pages/RuangVolunteer';
-import RuangVolunteerPM from "./pages/RuangVolunteerPM";
-import RuangVolunteerMM from "./pages/RuangVolunteerMM";
+import RuangVolunteer from './pages/ruang_volunteer/RuangVolunteer';
+import RuangVolunteerPM from "./pages/ruang_volunteer/RuangVolunteerPM";
+import RuangVolunteerMM from "./pages/ruang_volunteer/RuangVolunteerMM";
+import PojokBuku from "./pages/ruang_volunteer/PojokBuku";
+import ChatBot from "./pages/edukasi_interaktif/ChatBot";
 
 function App() {
 
@@ -21,8 +23,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/volunteer-home" element={<RuangVolunteer />} />
-                <Route path="/volunteer-home-panduan-mengajar" element={<RuangVolunteerPM />} />
-                <Route path="/volunteer-home-materi-mengajar" element={<RuangVolunteerMM />} />
+                <Route path="/volunteer-panduan-mengajar" element={<RuangVolunteerPM />} />
+                <Route path="/volunteer-materi-mengajar" element={<RuangVolunteerMM />} />
+                <Route path="/volunteer-pojok-buku" element={<PojokBuku/>} />
+                <Route path="/edukasi-chatbot" element={<ChatBot/>} />
             </Routes>
         </div>
     )

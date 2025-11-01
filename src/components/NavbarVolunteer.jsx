@@ -19,7 +19,9 @@ const NavbarVolunteer = () => {
                     name="Ruang Volunteer"
                     paths={[
                         "/volunteer-home",
-                        "/volunteer-home-panduan-mengajar"
+                        "/volunteer-panduan-mengajar",
+                        "/volunteer-materi-mengajar",
+                        "/volunteer-pojok-buku"
                     ]}
                     item1="Profil Saya"
                     item2="Materi Ajar"
@@ -27,7 +29,9 @@ const NavbarVolunteer = () => {
                 />
                 <DropDown
                     name="Edukasi Interaktif"
-                    path="/volunte"
+                    paths={[
+                        "/edukasi-chatbot",
+                    ]}
                     item1="Profil Saya"
                     item2="Materi Ajar"
                     item3="Logout"
