@@ -1,7 +1,7 @@
 import React from 'react'
-import BackButton from '../../components/edukasi_interaktif/BackButton'
+import BackButton from '../../components/edukasi_interaktif/BackButtonChatbot'
 import { Link } from 'react-router-dom';
-import Logo from '../../components/edukasi_interaktif/Logo';
+import Logo from '../../components/edukasi_interaktif/LogoChatbot';
 
 const HeaderChatBot = () => {
     return (

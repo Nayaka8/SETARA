@@ -31,9 +31,10 @@ const NavbarVolunteer = () => {
                     name="Edukasi Interaktif"
                     paths={[
                         "/edukasi-chatbot",
+                        "/edukasi-kuis",
                     ]}
-                    item1="Profil Saya"
-                    item2="Materi Ajar"
+                    item1="Edukasi Chatbot"
+                    item2="Kuis"
                     item3="Logout"
                 />
             </div>

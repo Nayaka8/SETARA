@@ -12,17 +12,16 @@ const DropDown = ({ name, paths, item1, item2, item3 }) => {
     const location = useLocation();
 
     const normalizedPaths = Array.isArray(paths) ? paths : [paths];
-    
+
     const isActive = normalizedPaths.some(path => location.pathname.startsWith(path));
 
     return (
         <div className="relative inline-block text-left">
             <div
-                className={`flex items-center gap-x-2 cursor-pointer ${
-                    isActive 
-                    ? 'text-[#FF9500]' 
-                    : 'text-black'  
-                }`} 
+                className={`flex items-center gap-x-2 cursor-pointer ${isActive
+                        ? 'text-[#FF9500]'
+                        : 'text-black'
+                    }`}
                 onClick={toggleDropdown}
             >
                 <div className='font-medium text-sm'>{name}</div>
@@ -34,27 +33,28 @@ const DropDown = ({ name, paths, item1, item2, item3 }) => {
             </div>
             {isOpen && (
                 <div
-                    className="origin-top-right absolute right-0 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-opacity-5"
+                    className="origin-top-left absolute left-0 rounded-b-md mt-4 shadow-lg bg-[#E7E1DA]"
                 >
-                    <div className="py-1" role="menu">
+                    <div role="menu">
                         <a
                             href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            className="block py-2 px-5 text-sm font-medium hover:bg-gray-100 whitespace-nowrap"
                         >
                             {item1}
                         </a>
                         <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            href=""
+                            className="block py-2 px-5 text-sm font-medium hover:bg-gray-100 whitespace-nowrap"
                         >
                             {item2}
                         </a>
                         <a
                             href="#"
-                            className="block px-4 py-2 text-sm text-red-700 hover:bg-gray-100"
+                            className="block py-2 px-5 text-sm font-medium hover:bg-gray-100 whitespace-nowrap"
                         >
                             {item3}
                         </a>
+
                     </div>
                 </div>
             )}

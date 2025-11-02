@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarVolunteer from '../../components/NavbarVolunteer'
-import HeaderChatBot from '../../sections/edukasi_interaktif/HeaderChatBot'
-import MainChatbot from '../../sections/edukasi_interaktif/MainChatbot'
+import HeaderChatBot from '../../sections/edukasi_interaktif/HeaderChatBotSection'
+import MainChatbot from '../../sections/edukasi_interaktif/MainChatbotSection'
 
 const ChatBot = () => {
   return (
